@@ -4,23 +4,23 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = 'CNode技术社区';
+  config.name = '许 cnode 博客';
 
-  config.description = 'CNode：Node.js专业中文社区';
+  config.description = '基于cnode的个人博客';
 
-  config.site_logo = '/public/images/cnodejs_light.svg';
+  config.site_logo = '/public/images/xu1.png';
 
-  config.site_icon = '/public/images/cnode_icon_32.png';
+  config.site_icon = '/public/images/xu.png';
 
   // debug 为 true 时，用于本地调试
   config.debug = true;
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1519887194138_3450';
+  config.keys = appInfo.name + '18958016564';
 
-  config.host = 'http://cnodejs.org';
+  config.host = 'http://www.shadowvip.com';
 
-  config.session_secret = 'node_club_secret'; // 务必修改
+  config.session_secret = 'xu_secret'; // 务必修改
 
   // add your config here
   config.middleware = [ 'locals', 'authUser', 'blockUser', 'errorPage', 'errorHandler' ];
@@ -31,7 +31,7 @@ module.exports = appInfo => {
   };
 
   // 是否允许直接注册（否则只能走 github 的方式）
-  config.allow_sign_up = true;
+  config.allow_sign_up = false;
 
   // cdn host，如 http://cnodejs.qiniudn.com
   config.site_static_host = process.env.EGG_SITE_STATIC_HOST || ''; // 静态文件存储域名
@@ -39,14 +39,14 @@ module.exports = appInfo => {
   config.mini_assets = process.env.EGG_MINI_ASSETS || false;
 
   // 版块
-  config.tabs = [[ 'share', '分享' ], [ 'ask', '问答' ], [ 'job', '招聘' ]];
+  config.tabs = [[ 'life', '生活' ], [ 'technology', '技术' ]];
 
   // RSS配置
   config.rss = {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
+    title: '言午之家',
+    link: 'http://www.shadowvip.com',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: '许的个人博客',
     // 最多获取的RSS Item数量
     max_rss_items: 50,
   };
@@ -94,11 +94,11 @@ module.exports = appInfo => {
 
   config.auth_cookie_name = 'node_club';
   config.admins = {
-    ADMIN_USER: true,
+    xu: true,
   };
 
   config.siteFile = {
-    '/favicon.ico': '/public/images/cnode_icon_32.png',
+    '/favicon.ico': '/public/images/xu.png',
   };
 
   // database
@@ -123,8 +123,8 @@ module.exports = appInfo => {
 
   // passport
   config.passportGithub = {
-    key: process.env.EGG_PASSPORT_GITHUB_CLIENT_ID || 'test',
-    secret: process.env.EGG_PASSPORT_GITHUB_CLIENT_SECRET || 'test',
+    key: process.env.EGG_PASSPORT_GITHUB_CLIENT_ID || '8352ef1f1ce933e6f240',
+    secret: process.env.EGG_PASSPORT_GITHUB_CLIENT_SECRET || '8352ef1f1ce933e6f240',
   };
 
   config.passportLocal = {
@@ -158,7 +158,7 @@ module.exports = appInfo => {
   // 每个 IP 每天可创建用户数
   config.create_user_per_ip = 1000;
 
-  config.search = 'google'; // 'google', 'baidu', 'local'
+  config.search = 'local'; // 'google', 'baidu', 'local'
 
   config.security = {
     csrf: {

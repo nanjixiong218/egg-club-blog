@@ -13,11 +13,7 @@
       <p><%= config.description %></p>
 
       <div>
-        您可以
-        <a href='/signin'>登录</a>
-        或
-        <a href='/signup'>注册</a>
-        , 也可以
+        如果您想要评论可以
         <a href="/passport/github">
           <span class="span-info">
             通过 GitHub 登录
@@ -61,29 +57,8 @@
   </div>
   <% } %>
 
-  <% if (typeof tops !== 'undefined') { %>
   <div class='panel'>
-    <div class='header'>
-      <span class='col_fade'>积分榜</span>
-      &nbsp;
-      <a class='dark' href='/users/top100'>TOP 100 &gt;&gt;</a>
-    </div>
-    <div class='inner'>
-      <% if (tops.length > 0) { %>
-      <ol>
-        <% tops.forEach(user => { %>
-        <%- include('user/top.html', { user }) %>
-        <% }) %>
-      </ol>
-      <% } else { %>
-      <p>无</p>
-      <% } %>
-    </div>
-  </div>
-  <% } %>
-
-  <div class='panel'>
-    <div class='header'>
+    <!-- <div class='header'>
       <span class='col_fade'>友情社区</span>
     </div>
     <div class='inner'>
@@ -111,17 +86,17 @@
           </a>
         </li>
       </ol>
-    </div>
+    </div> -->
   </div>
   <div class='panel'>
-    <div class='header'>
+    <!-- <div class='header'>
       <span class='col_fade'>客户端二维码</span>
     </div>
     <div class='inner cnode-app-download'>
       <img width='200' src="//dn-cnode.qbox.me/FtG0YVgQ6iginiLpf9W4_ShjiLfU">
       <br />
       <a href="https://github.com/soliury/noder-react-native" target="_blank">客户端源码地址</a>
-    </div>
+    </div> -->
   </div>
 
 </div>
