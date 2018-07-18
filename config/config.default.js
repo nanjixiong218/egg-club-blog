@@ -123,8 +123,8 @@ module.exports = appInfo => {
 
   // passport
   config.passportGithub = {
-    key: process.env.EGG_PASSPORT_GITHUB_CLIENT_ID || '8352ef1f1ce933e6f240',
-    secret: process.env.EGG_PASSPORT_GITHUB_CLIENT_SECRET || '8352ef1f1ce933e6f240',
+    key: process.env.XU_PASSPORT_GITHUB_CLIENT_ID || 'test',
+    secret: process.env.XU_PASSPORT_GITHUB_CLIENT_SECRET || 'test',
   };
 
   config.passportLocal = {
