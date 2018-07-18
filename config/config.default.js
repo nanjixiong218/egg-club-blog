@@ -101,7 +101,7 @@ module.exports = appInfo => {
 
   config.auth_cookie_name = 'node_club';
   config.admins = {
-    xu: true,
+    nanjixiong218: true,
   };
 
   config.siteFile = {
