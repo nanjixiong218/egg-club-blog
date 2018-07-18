@@ -3,6 +3,13 @@ const path = require('path');
 
 module.exports = appInfo => {
   const config = {};
+  config.cluster = {
+    listen: {
+      port: 80,
+      hostname: '127.0.0.1',
+    // path: '/var/run/egg.sock',
+    },
+  };
 
   config.name = '许 cnode 博客';
 
@@ -145,8 +152,8 @@ module.exports = appInfo => {
 
   config.alinode = {
     // 从 `Node.js 性能平台` 获取对应的接入参数
-    appid: process.env.EGG_ALINODE_APPID || '',
-    secret: process.env.EGG_ALINODE_SECRET || '',
+    appid: process.env.XU_ALINODE_APPID || '123',
+    secret: process.env.XU_ALINODE_SECRET || '123',
   };
 
   config.topic = {
