@@ -3,6 +3,9 @@ const path = require('path');
 
 module.exports = appInfo => {
   const config = {};
+  config.static = {
+    gzip: true,
+  };
   config.cluster = {
     listen: {
       port: 80,
