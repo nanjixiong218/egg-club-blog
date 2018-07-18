@@ -11,7 +11,7 @@ module.exports = appInfo => {
     },
   };
 
-  config.name = '许 cnode 博客';
+  config.name = 'xu_blog';
 
   config.description = '基于cnode的个人博客';
 
