@@ -1,0 +1,387 @@
+.tile{
+    position:relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: #eeeeee;
+    box-shadow: inset 0px 0px 1px #ffffcc;
+}
+.tile:hover{
+outline: #999999 solid 3px;
+}
+.tile.no-outline{
+outline-color: transparent;
+}
+/*背景色*/
+.bg-red{background-color: #e51400 !important;}
+.bg-red1{background-color: #b01e00 !important;}
+.bg-red2{background-color: #ae113d !important;}
+.bg-green{background-color: #60a917 !important;}
+.bg-green1{background-color: #78ba00 !important;}
+.bg-green2{background-color: #199900 !important;}
+.bg-green3{background-color: #004a00 !important;}
+.bg-green4{background-color: #00c13f !important;}
+.bg-green5{background-color: #15992a !important;}
+.bg-green6{background-color: #91d100 !important;}
+.bg-blue{background-color: #16499a !important;}
+.bg-blue1{background-color: #2673ec !important;}
+.bg-blue2{background-color: #006ac1 !important;}
+.bg-blue3{background-color: #001e4e !important;}
+.bg-blue4{background-color: #008287 !important;}
+.bg-blue5{background-color: #004d60 !important;}
+.bg-blue6{background-color: #1faeff !important;}
+.bg-blue7{background-color: #1b58b8 !important;}
+.bg-blue8{background-color: #56c5ff !important;}
+.bg-blue9{background-color: #569ce3 !important;}
+.bg-blue10{background-color: #00d8cc !important;}
+.bg-blue11{background-color: #00aaaa !important;}
+.bg-blue12{background-color: #00a4a4 !important;}
+.bg-black{background-color: #252525 !important;}
+.bg-black1{background-color: #2e1700 !important;}
+.bg-grey{background-color: #696969 !important;}
+.bg-yellow{background-color: #f4b300 !important;}
+.bg-yellow1{background-color: #ff981d !important;}
+.bg-yellow2{background-color: #e56c19 !important;}
+.bg-yellow3{background-color: #e1b700 !important;}
+.bg-yellow4{background-color: #d39d09 !important;}
+.bg-yellow5{background-color: #ff7d23 !important;}
+.bg-chocolate{background-color: #632f00 !important;}
+.bg-chocolate1{background-color: #4e0000 !important;}
+.bg-purple{background-color: #7200ac !important;}
+.bg-purple1{background-color: #2d004e !important;}
+.bg-purple2{background-color: #4617b4 !important;}
+.bg-purple3{background-color: #1f0048 !important;}
+.bg-orange{background-color: #ff2e12 !important;}
+.bg-orange1{background-color: #b81b1b !important;}
+.bg-pink{background-color: #c1004f !important;}
+.bg-pink1{background-color: #ff1d77 !important;}
+.bg-pink2{background-color: #b81d6c !important;}
+.bg-pink3{background-color: #aa40ff !important;}
+.bg-pink4{background-color: #691bb8 !important;}
+.bg-pink5{background-color: #b81b6c !important;}
+.bg-pink6{background-color: #ff76bc !important;}
+.bg-pink7{background-color: #e064b7 !important;}
+/*内部文本样式*/
+.fg-white{color:#ffffff !important;}
+.fg-red{color: #e51400 !important;}
+.fg-red1{color: #b01e00 !important;}
+.fg-red2{color: #ae113d !important;}
+.fg-green{color: #60a917 !important;}
+.fg-green1{color: #78ba00 !important;}
+.fg-green2{color: #199900 !important;}
+.fg-green3{color: #004a00 !important;}
+.fg-green4{color: #00c13f !important;}
+.fg-green5{color: #15992a !important;}
+.fg-green6{color: #91d100 !important;}
+.fg-blue{color: #16499a !important;}
+.fg-blue1{color: #2673ec !important;}
+.fg-blue2{color: #006ac1 !important;}
+.fg-blue3{color: #001e4e !important;}
+.fg-blue4{color: #008287 !important;}
+.fg-blue5{color: #004d60 !important;}
+.fg-blue6{color: #1faeff !important;}
+.fg-blue7{color: #1b58b8 !important;}
+.fg-blue8{color: #56c5ff !important;}
+.fg-blue9{color: #569ce3 !important;}
+.fg-blue10{color: #00d8cc !important;}
+.fg-blue11{color: #00aaaa !important;}
+.fg-blue12{color: #00a4a4 !important;}
+.fg-black{color: #252525 !important;}
+.fg-black1{color: #2e1700 !important;}
+.fg-grey{color: #696969 !important;}
+.fg-yellow{color: #f4b300 !important;}
+.fg-yellow1{color: #ff981d !important;}
+.fg-yellow2{color: #e56c19 !important;}
+.fg-yellow3{color: #e1b700 !important;}
+.fg-yellow4{color: #d39d09 !important;}
+.fg-yellow5{color: #ff7d23 !important;}
+.fg-chocolate{color: #632f00 !important;}
+.fg-chocolate1{color: #4e0000 !important;}
+.fg-purple{color: #7200ac !important;}
+.fg-purple1{color: #2d004e !important;}
+.fg-purple2{color: #4617b4 !important;}
+.fg-purple3{color: #1f0048 !important;}
+.fg-orange{color: #ff2e12 !important;}
+.fg-orange1{color: #b81b1b !important;}
+.fg-pink{color: #c1004f !important;}
+.fg-pink1{color: #ff1d77 !important;}
+.fg-pink2{color: #b81d6c !important;}
+.fg-pink3{color: #aa40ff !important;}
+.fg-pink4{color: #691bb8 !important;}
+.fg-pink5{color: #b81b6c !important;}
+.fg-pink6{color: #ff76bc !important;}
+.fg-pink7{color: #e064b7 !important;}
+
+/*轮廓样式*/
+.ol-red{outline-color: #e51400 !important;}
+.ol-red1{outline-color: #b01e00 !important;}
+.ol-red2{outline-color: #ae113d !important;}
+.ol-green{outline-color: #60a917 !important;}
+.ol-green1{outline-color: #78ba00 !important;}
+.ol-green2{outline-color: #199900 !important;}
+.ol-green3{outline-color: #004a00 !important;}
+.ol-green4{outline-color: #00c13f !important;}
+.ol-green5{outline-color: #15992a !important;}
+.ol-green6{outline-color: #91d100 !important;}
+.ol-blue{outline-color: #16499a !important;}
+.ol-blue1{outline-color: #2673ec !important;}
+.ol-blue2{outline-color: #006ac1 !important;}
+.ol-blue3{outline-color: #001e4e !important;}
+.ol-blue4{outline-color: #008287 !important;}
+.ol-blue5{outline-color: #004d60 !important;}
+.ol-blue6{outline-color: #1faeff !important;}
+.ol-blue7{outline-color: #1b58b8 !important;}
+.ol-blue8{outline-color: #56c5ff !important;}
+.ol-blue9{outline-color: #569ce3 !important;}
+.ol-blue10{outline-color: #00d8cc !important;}
+.ol-blue11{outline-color: #00aaaa !important;}
+.ol-blue12{outline-color: #00a4a4 !important;}
+.ol-black{outline-color: #252525 !important;}
+.ol-black1{outline-color: #2e1700 !important;}
+.ol-grey{outline-color: #696969 !important;}
+.ol-yellow{outline-color: #f4b300 !important;}
+.ol-yellow1{outline-color: #ff981d !important;}
+.ol-yellow2{outline-color: #e56c19 !important;}
+.ol-yellow3{outline-color: #e1b700 !important;}
+.ol-yellow4{outline-color: #d39d09 !important;}
+.ol-yellow5{outline-color: #ff7d23 !important;}
+.ol-chocolate{outline-color: #632f00 !important;}
+.ol-chocolate1{outline-color: #4e0000 !important;}
+.ol-purple{outline-color: #7200ac !important;}
+.ol-purple1{outline-color: #2d004e !important;}
+.ol-purple2{outline-color: #4617b4 !important;}
+.ol-purple3{outline-color: #1f0048 !important;}
+.ol-orange{outline-color: #ff2e12 !important;}
+.ol-orange1{outline-color: #b81b1b !important;}
+.ol-pink{outline-color: #c1004f !important;}
+.ol-pink1{outline-color: #ff1d77 !important;}
+.ol-pink2{outline-color: #b81d6c !important;}
+.ol-pink3{outline-color: #aa40ff !important;}
+.ol-pink4{outline-color: #691bb8 !important;}
+.ol-pink5{outline-color: #b81b6c !important;}
+.ol-pink6{outline-color: #ff76bc !important;}
+.ol-pink7{outline-color: #e064b7 !important;}
+
+/*边框颜色样式*/
+.bd-red{border-color: #e51400 !important;}
+.bd-red1{border-color: #b01e00 !important;}
+.bd-red2{border-color: #ae113d !important;}
+.bd-green{border-color: #60a917 !important;}
+.bd-green1{border-color: #78ba00 !important;}
+.bd-green2{border-color: #199900 !important;}
+.bd-green3{border-color: #004a00 !important;}
+.bd-green4{border-color: #00c13f !important;}
+.bd-green5{border-color: #15992a !important;}
+.bd-green6{border-color: #91d100 !important;}
+.bd-blue{border-color: #16499a !important;}
+.bd-blue1{border-color: #2673ec !important;}
+.bd-blue2{border-color: #006ac1 !important;}
+.bd-blue3{border-color: #001e4e !important;}
+.bd-blue4{border-color: #008287 !important;}
+.bd-blue5{border-color: #004d60 !important;}
+.bd-blue6{border-color: #1faeff !important;}
+.bd-blue7{border-color: #1b58b8 !important;}
+.bd-blue8{border-color: #56c5ff !important;}
+.bd-blue9{border-color: #569ce3 !important;}
+.bd-blue10{border-color: #00d8cc !important;}
+.bd-blue11{border-color: #00aaaa !important;}
+.bd-blue12{border-color: #00a4a4 !important;}
+.bd-black{border-color: #252525 !important;}
+.bd-black1{border-color: #2e1700 !important;}
+.bd-grey{border-color: #696969 !important;}
+.bd-yellow{border-color: #f4b300 !important;}
+.bd-yellow1{border-color: #ff981d !important;}
+.bd-yellow2{border-color: #e56c19 !important;}
+.bd-yellow3{border-color: #e1b700 !important;}
+.bd-yellow4{border-color: #d39d09 !important;}
+.bd-yellow5{border-color: #ff7d23 !important;}
+.bd-chocbdate{border-color: #632f00 !important;}
+.bd-chocbdate1{border-color: #4e0000 !important;}
+.bd-purple{border-color: #7200ac !important;}
+.bd-purple1{border-color: #2d004e !important;}
+.bd-purple2{border-color: #4617b4 !important;}
+.bd-purple3{border-color: #1f0048 !important;}
+.bd-orange{border-color: #ff2e12 !important;}
+.bd-orange1{border-color: #b81b1b !important;}
+.bd-pink{border-color: #c1004f !important;}
+.bd-pink1{border-color: #ff1d77 !important;}
+.bd-pink2{border-color: #b81d6c !important;}
+.bd-pink3{border-color: #aa40ff !important;}
+.bd-pink4{border-color: #691bb8 !important;}
+.bd-pink5{border-color: #b81b6c !important;}
+.bd-pink6{border-color: #ff76bc !important;}
+.bd-pink7{border-color: #e064b7 !important;}
+
+
+/*尺寸*/
+/*50%*/
+
+.tile.half{width:55px;height: 55px}
+/*2倍*/
+.tile.double{width:250px}
+/*3倍*/
+.tile.triple{width:380px}
+/*4倍*/
+.tile.quadro{width:510px}
+.tile.five-align{width:640px}
+.tile.six-align{width:770px}
+.tile.seven-align{width:900px}
+.tile.eight-align{width:1030px}
+/*垂直*/
+.tile.double-vertical{height: 250px}
+.tile.triple-vertical{height: 380px}/*50%*/
+.tile.quadro-vertical{height: 510px}
+.tile.five-vertical{height:640px}
+.tile.six-vertical{height:770px}
+.tile.seven-vertical{height:900px}
+
+
+
+/*状态*/
+.tile.selected{
+    border:4px #4390df solid;
+}
+.tile.selected:after{
+    position: absolute;
+    display: block;
+    border-top: 28px solid #4390df;
+    border-left: 28px solid transparent;
+    right: 0;
+    top: 0;
+    content:"";
+    z-index: 101;
+}
+.tile.selected:before{
+    position: absolute;
+    display: block;
+    content: "\e013";
+    color: #fff;
+    right: 0;
+    top: 0;
+    font-family: Glyphicons Halflings;
+    font-size: 10pt;
+    font-weight: normal;
+    z-index: 102;
+}
+
+/*内部内容*/
+.tile .tile-content{
+    font-size: 18pt;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    display: block;
+    position: absolute;
+    left:0;
+    top: 0;
+    overflow: hidden;
+}
+.tile .tile-content.padded{
+    padding:10px;
+}
+.tile .tile-content.image{
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.tile .tile-content.icon [class*="icon-"],
+.tile .tile-content.icon [class*="glyphicon-"],
+.tile .tile-content.icon img{
+    line-height: 56px;
+    height: 56px;
+    width:56px;
+    font-size: 48px;
+    color:#ffffff;
+    text-align: center;
+    /*上下左右居中*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -28px;
+    margin-left: -28px;
+}
+/*brand*/
+.tile .brand{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 29px;
+    margin: 0;
+}
+.tile .brand.opacity{
+    opacity:.7;
+}
+.tile .brand:before,
+.tile .brand:after{
+    display: table;
+    content: "";
+}
+.tile .brand:after{
+    clear: both;
+}
+.tile .brand .label,
+.tile .brand .text{
+    float: left;
+    display: block;
+    font-size: 10pt;
+    margin: 5px 20px 2px 5px;
+    background: transparent;
+    color: #ffffff;
+}
+.tile .brand .text{
+    margin: 4px 5px;
+    font-size: 8pt;
+}
+.tile .brand .badge{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    margin: 0;
+    vertical-align: middle !important;
+    display: block;
+    font-size: 10pt;
+    border-radius:0px;
+}
+.tile-group{
+    position: relative;
+    float: left;/*去掉它会有奇怪效果 ，想不明白为什么*/
+    display: block;
+    padding: 40px 0px 0px 10px;
+}
+.tile-group .tile-group-title{
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    color: inherit;
+}
+.tile-group.two,
+.tile-group.double{width:270px;}
+.tile-group.three,
+.tile-group.triple{width:400px;}
+.tile-group.four,
+.tile-group.quadro{width:270px;}
+.tile-group.five{width:660px}
+.tile-group.six{width:790px}
+.tile-group.seven{width:920px}
+.tile-group.eight{width:1050px}
+
+/*实现轮播，一个tile只显示一个tile-content内容*/
+.tile .tile-content{
+    display: none;
+}
+.tile .tile-content:first-child{
+    display: block;
+}
