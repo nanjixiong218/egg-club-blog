@@ -289,16 +289,16 @@ define(function(require,exports,module){
         name:"travel",
         data:new Map(),
         fillData:function(){
-            this.data.put("2",{text:"趵突泉",func:function(){document.body.style.backgroundImage="url(./img/my2048/btq.jpg')"}});//页面总是会闪一下是什么原因？可能需要先把图片下下来，缓存住。
-            this.data.put("4",{text:"九寨沟",func:function(){document.body.style.backgroundImage="url(./img/my2048/jzg.jpg')"}});
-            this.data.put("8",{text:"丽江",func:function(){document.body.style.backgroundImage="url(./img/my2048/lj.jpg')"}});
-            this.data.put("16",{text:"泰山",func:function(){document.body.style.backgroundImage="url(./img/my2048/ts.jpg')"}});
-            this.data.put("32",{text:"断桥",func:function(){document.body.style.backgroundImage="url(./img/my2048/dq.jpg')"}});
-            this.data.put("64",{text:"黄山",func:function(){document.body.style.backgroundImage="url(./img/my2048/hs.jpg')"}});
-            this.data.put("128",{text:"龙门石窟",func:function(){document.body.style.backgroundImage="url(./img/my2048/lmsk.jpg')"}});
-            this.data.put("256",{text:"西溪湿地",func:function(){document.body.style.backgroundImage="url(./img/my2048/xixi.jpg')"}});
-            this.data.put("512",{text:"凤凰山",func:function(){document.body.style.backgroundImage="url(./img/my2048/fhs.jpg')"}});
-            this.data.put("1024",{text:"大理",func:function(){document.body.style.backgroundImage="url(./img/my2048/dl.jpg')"}});
+            this.data.put("2",{text:"趵突泉",func:function(){document.body.style.backgroundImage="url('.img/my2048/btq.jpg')"}});//页面总是会闪一下是什么原因？可能需要先把图片下下来，缓存住。
+            this.data.put("4",{text:"九寨沟",func:function(){document.body.style.backgroundImage="url('./img/my2048/jzg.jpg')"}});
+            this.data.put("8",{text:"丽江",func:function(){document.body.style.backgroundImage="url('./img/my2048/lj.jpg')"}});
+            this.data.put("16",{text:"泰山",func:function(){document.body.style.backgroundImage="url('./img/my2048/ts.jpg')"}});
+            this.data.put("32",{text:"断桥",func:function(){document.body.style.backgroundImage="url('./img/my2048/dq.jpg')"}});
+            this.data.put("64",{text:"黄山",func:function(){document.body.style.backgroundImage="url('./img/my2048/hs.jpg')"}});
+            this.data.put("128",{text:"龙门石窟",func:function(){document.body.style.backgroundImage="url('./img/my2048/lmsk.jpg')"}});
+            this.data.put("256",{text:"西溪湿地",func:function(){document.body.style.backgroundImage="url('./img/my2048/xixi.jpg')"}});
+            this.data.put("512",{text:"凤凰山",func:function(){document.body.style.backgroundImage="url('./img/my2048/fhs.jpg')"}});
+            this.data.put("1024",{text:"大理",func:function(){document.body.style.backgroundImage="url('./img/my2048/dl.jpg')"}});
             this.data.put("2048",{text:"天堂",func:function(){
                 document.body.style.backgroundImage="url(./img/my2048/tt.jpg')";
 
