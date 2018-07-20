@@ -98,6 +98,7 @@ module.exports = app => {
   router.post('/upload', userRequired, topic.upload); // 上传图片
   // static page
   router.get('/about', page.about);
+  router.get('/demos', page.demos);
   router.get('/faq', page.faq);
   router.get('/getstart', page.getstart);
   router.get('/robots.txt', page.robots);

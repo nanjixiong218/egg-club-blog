@@ -6,6 +6,9 @@ class PageController extends Controller {
   async about() {
     await this.ctx.render('static/about', { pageTitle: '关于我们' });
   }
+  async demos() {
+    await this.ctx.render('static/demos', { pageTitle: '静态demos' });
+  }
 
   // FAQ
   async faq() {

@@ -1,0 +1,240 @@
+<%- include('../sidebar.html') %>
+
+<div id='content'>
+  <div class='panel'>
+    <div class='header'>
+      <ul class='breadcrumb'>
+        <li><a href='/'>主页</a><span class='divider'>/</span></li>
+        <li class='active'>demos</li>
+      </ul>
+    </div>
+    <div class='inner topic'>
+      <div class="topic_content">
+        <link href="/public/libs/jqueryPluge/lightbox/lightbox.css" rel="stylesheet"/>
+        <style type="text/css">
+            #projects .box {
+                box-sizing: border-box;
+                border:1px solid floralwhite;
+                margin: 0 20px 20px 20px;
+                float: left;
+                width:230px;
+            }
+            #projects .box img {
+                width:230px;
+                height:150px;
+            }
+            #projects .box:hover{
+                border: 1px solid green;
+            }
+            #projects .box ul {
+                margin-left:0;
+                text-align: center;
+            }
+        
+        
+        </style>
+        <script type="text/javascript" src="/public/libs/jqueryPluge/lightbox/lightbox.js"></script>
+        <!-- <section class="callaction">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="big-cta">
+                            <div class="cta-text">
+                                <h2><span>我的家庭</span>静态展示页面</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="content">
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>我的妈妈</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-desktop fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/myMother.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>我的爸爸</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-pagelines fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/myFather.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>我的女朋友</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-edit fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/mengying.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>母亲节礼物</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-code fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/motherDay.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>父亲节礼物</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-code fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/fatherDay.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box">
+                                    <div class="box-gray aligncenter">
+                                        <h4>女友生日</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-code fa-3x"></i>
+                                        </div>
+                                        <p>
+        
+                                        </p>
+        
+                                    </div>
+                                    <div class="box-bottom">
+                                        <a href="/static/birthday-meng.html">跳转</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- divider -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="solidline">
+                        </div>
+                    </div>
+                </div>
+                <!-- end divider -->
+                <!-- Portfolio Projects -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <section id="projects">
+                                <div class="box">
+                                    <a href="/public/img/my2048.jpg" data-lightbox="group1" data-title="我的2048">
+                                        <img src="/public/img/my2048.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/my2048" target="_blank">github源码地址</a></li>
+                                        <li><a href="/public/staticDemos/2048.html" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="box">
+                                    <a href="/public/img/despersion.jpg" data-lightbox="group1" data-title="jquery插件">
+                                        <img src="/public/img/despersion.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/despersionBaseedOnJquery" target="_blank">github源码地址</a></li>
+                                        <li><a href="/static/despersion.html" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <a href="/public/img/clock.jpg" data-lightbox="group1" data-title="canvas时钟">
+                                        <img src="/public/img/clock.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/canvas-Test/tree/master/myCanvasClock" target="_blank">github源码地址</a></li>
+                                        <li><a href="/static/clock.html" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <a href="/public/img/painting.jpg" data-lightbox="group1" data-title="画图">
+                                        <img src="/public/img/painting.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/canvas-Test/tree/master/mycanvasDrawing" target="_blank">github源码地址</a></li>
+                                        <li><a href="/static/painting.html" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <a href="/public/img/timeLine.jpg" data-lightbox="group1" data-title="时间轴">
+                                        <img src="/public/img/timeLine.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/canvas-Test/tree/master/timeLine" target="_blank">github源码地址</a></li>
+                                        <li><a href="/static/timeLine.html" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <a href="/public/img/lab.jpg" data-lightbox="group1" data-title="实验室">
+                                        <img src="/public/img/lab.jpg">
+                                    </a>
+                                    <ul class="nav nav-default">
+                                        <li><a href="https://github.com/nanjixiong218/myLab" target="_blank">github源码地址</a></li>
+                                        <li><a href="http://www.shadowvip.com:3001/" target="_blank">项目演示地址</a></li>
+                                    </ul>
+                                </div> -->
+        
+                            </section>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
