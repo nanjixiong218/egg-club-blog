@@ -121,6 +121,9 @@ module.exports = app => {
       if (ctx.app.config.admins.hasOwnProperty(user.loginname)) {
         user.is_admin = true;
       }
+      if (ctx.app.config.whiteusers.hasOwnProperty(user.loginname)) {
+        user.is_white = true; // 是否允许写文章
+      }
     }
 
     return user;

@@ -106,6 +106,10 @@ module.exports = appInfo => {
   config.admins = {
     nanjixiong218: true,
   };
+  config.whiteusers = { // 白名单用户，可以发布主题
+    nanjixiong218: true,
+    boydxu: true,
+  };
 
   config.siteFile = {
     '/favicon.ico': '/public/images/xu.png',

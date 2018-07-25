@@ -24,7 +24,7 @@
     <% } %>
   </div>
 
-  <% if (current_user) { %>
+  <% if (current_user && (current_user.is_white || current_user.is_admin)) { %>
   <div class="panel">
     <div class='inner'>
       <a href='/topic/create' id='create_topic_btn'>
