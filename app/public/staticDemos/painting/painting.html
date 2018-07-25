@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas 绘图程序</title>
+    <style type="text/css">
+        #controls{
+            position:absolute;
+            left:20px;
+            top:10px;
+            border:1px solid #000000;
+            background-color: rgba(0,0,100,0.4);
+            width:180px;
+        }
+        #mydrawing{
+            position: absolute;
+            left:200px;
+            top:10px;
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor:pointer;
+            /*
+            * canvas用 0 auto无法居中Todo,canvas应该算是内敛元素，或者inline-block
+            * 把body设置为text-align：center就居中了
+            */
+            -webkit-box-shadow:4px 4px 8px rgba(0,0,0,0.5);/*这最后如果不加分号，浏览器居然也不认*/
+            -moz-box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+            box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .oneLine{
+            padding:10px;
+            border-bottom: 1px solid red;
+        }
+        button{
+            width:120px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+        
+    <h1><a href="http://www.shadowvip.com/demos">返回主页</a></h1> 
+<div id="controls">
+    <div class="oneLine">
+        <label for="stroke-color">颜色:</label>
+        <select id="stroke-color">
+            <option selected="selected" value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+        </select>
+    </div>
+    <div class="oneLine">
+        <label for="sides">多边形变数:</label>
+        <select id="sides">
+            <option selected="selected" value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+    </div>
+    <div class="oneLine">
+        <label for="guidewire">导引线:</label>
+        <input id="guidewire" type="checkbox"  value="1"/>
+    </div>
+    <div class="oneLine">
+        <label for="dash">虚线:</label>
+        <input id="dash" type="checkbox"  value="1"/>
+    </div>
+    <div class="oneLine">
+        <label for="rounded">圆角:</label>
+        <input id="rounded" type="checkbox"  value="1"/>
+    </div>
+    <div class="oneLine">
+        <button id="pen">画笔</button>
+    </div>
+    <div class="oneLine">
+        <button id="line">直线</button>
+    </div>
+    <div class="oneLine">
+        <button id="rect">矩形</button>
+    </div>
+    <div class="oneLine">
+        <button id="polygon" value="edit">画多边形</button>
+    </div>
+    <div class="oneLine">
+        <button id="erase" value="edit">橡皮擦</button>
+    </div>
+    <div class="oneLine">
+        <button id="editing" value="edit">拖动多边形</button>
+    </div>
+    <div class="oneLine">
+        <button id="clearAll" value="Clear">清空画板</button>
+    </div>
+</div>
+
+<canvas id="mydrawing">
+
+</canvas>
+<script type="text/javascript" src="./myCanvasDrawing.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253109480'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253109480%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
