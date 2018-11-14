@@ -109,6 +109,7 @@ module.exports = appInfo => {
   config.whiteusers = { // 白名单用户，可以发布主题
     nanjixiong218: true,
     boydxu: true,
+    tietoudengjin: true,
   };
 
   config.siteFile = {
