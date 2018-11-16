@@ -82,7 +82,7 @@ module.exports = app => {
   };
 
   app.passport.verify(async (ctx, user) => {
-    ctx.logger.debug('passport.verify', user);
+    ctx.logger.info('passport.verify', user);
     const handler = user.provider === 'github' ? githubHandler : localHandler;
     const existUser = await handler(ctx, user);
     if (existUser) {
